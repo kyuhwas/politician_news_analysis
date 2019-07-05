@@ -31,4 +31,6 @@ category 19: 황교안
 
 각 뉴스 문서에는 작성 날짜가 기록되어 있기 때문에 시간의 변화에 따른 각 질의어에 대한 토픽의 변화를 추적할 수 있습니다. 이를 위하여 토픽 모델링, 연관어 분석, 문서 요약 등 다양한 방법이 이용될 수 있습니다. 이 repository 는 [politician_news_dataset][politician_news_dataset] 를 이용한 정치인 뉴스를 분석한 예시 코드들이 순차적으로 업데이트 될 계획입니다. 한 접근법에 대한 코드가 정리되면 위의 `latest update` 에 마지막 날짜를 업데이트 하겠습니다.
 
+`tutorials` 폴더의 `config.py` 파일에는 [politician_news_dataset][politician_news_dataset] 데이터셋의 설치 위치가 저장되어 있습니다. 각자의 환경에 맞춰 path 를 변경하신 후 이용하시기 바랍니다.
+
 [politician_news_dataset]: https://github.com/lovit/politician_news_dataset
