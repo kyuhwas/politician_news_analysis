@@ -5,23 +5,23 @@ def proportion_keyword(bow, pos_idx, idx_to_vocab, ref_idx=None, topk1=100, topk
     """
     Arguments
     ---------:
-        bow : scipy.sparse.csr_matrix
-            (n_docs, n_terms) shape Bag-of-Words Model
-        pos_idx : list, set, int, or numpy.ndarray
-            Positive row index
-        idx_to_vocab : list of str
-            Vocabulary list
-        ref_idx : list, set, int, numpy.ndarray, or None
-            If None, use rest row of pos_idx
-        topk1: int
-            Number of most frequent terms for keyword candidates
-        topk2: int
-            Number of selected keywords
+    bow : scipy.sparse.csr_matrix
+        (n_docs, n_terms) shape Bag-of-Words Model
+    pos_idx : list, set, int, or numpy.ndarray
+        Positive row index
+    idx_to_vocab : list of str
+        Vocabulary list
+    ref_idx : list, set, int, numpy.ndarray, or None
+        If None, use rest row of pos_idx
+    topk1: int
+        Number of most frequent terms for keyword candidates
+    topk2: int
+        Number of selected keywords
 
     Returns
     -------
-        keywords : list of tuple
-            Each tuple consists of (keyword, score, proportion in positive documents)
+    keywords : list of tuple
+        Each tuple consists of (keyword, score, proportion in positive documents)
     """
 
     n_docs, n_terms = bow.shape
