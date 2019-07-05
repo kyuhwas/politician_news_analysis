@@ -4,7 +4,7 @@ from sklearn.metrics import pairwise_distances
 from soynlp.tokenizer import MaxScoreTokenizer
 
 
-def diverse_keysentences(keywords, texts, topk=10, diversity=0.3, penalty=None, raw_texts=None):
+def diverse_keysentences(keywords, texts, topk=10, diversity=0.7, penalty=None, raw_texts=None):
     """
     Arguments
     ---------
@@ -132,7 +132,7 @@ class KeywordVectorizer:
 
     def tokenize(self, sent):
         terms = self.tokenizer.tokenize(sent)
-        terms = [term for term in terms if term in vocab_to_idx]
+        terms = [term for term in terms if term in self.vocab_to_idx]
         return terms
 
     def vectorize(self, sents):
